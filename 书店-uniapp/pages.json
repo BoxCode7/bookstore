@@ -1,0 +1,147 @@
+{
+	"pages": [
+		// 首页
+		{
+			"path": "pages/index/index"
+		},
+		//商品列表
+		{
+			"path": "pages/commodity/commodity",
+			"style": {
+				"enablePullDownRefresh": true
+			}
+
+		},
+		//购物车
+		{
+			"path": "pages/cart/cart",
+			"style": {
+				"navigationBarTitleText": "购物车",
+				"enablePullDownRefresh": false
+			}
+		},
+		//用户中心
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "用户中心",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		//商品详情
+		{
+			"path": "pages/commodity/details/details",
+			"style": {
+				"navigationBarTitleText": "商品详情",
+				"enablePullDownRefresh": true
+			}
+
+		},
+		// 联系我们
+		{
+			"path": "pages/user/contact",
+			"style": {
+				"navigationBarTitleText": "联系我们",
+				"enablePullDownRefresh": false
+			}
+		},
+		//登录
+		{
+			"path": "pages/user/login"
+		},
+		//注册
+		{
+			"path": "pages/user/register"
+		},
+		//个人信息中心
+		{
+			"path": "pages/user/datum/datum"
+		},
+		//修改头像
+		{
+			"path": "pages/user/datum/avatar",
+			"style": {
+				"navigationBarTitleText": "修改头像"
+			}
+
+		},
+		//修改密码
+		{
+			"path": "pages/user/datum/password",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+			}
+
+		},
+		//修改信息
+		{
+			"path": "pages/user/datum/name",
+			"style": {
+				"navigationBarTitleText": "修改信息"
+			}
+
+		},
+		//订单
+	    {
+            "path" : "pages/cart/order/order",
+			"style":{
+				"navigationBarTitleText":"我的订单"
+			}
+        }
+    ],
+	"globalStyle": {
+		// "navigationStyle": "custom",//取消顶部导航栏
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "爪哇岛书城",
+		"navigationBarBackgroundColor": "#d81e06",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	},
+	"tabBar": {
+		"color": "#8a8a8a",
+		"selectedColor": "#d81e06",
+		"list": [
+			// 首页
+			{
+				"text": "首页",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/icon/index.png",
+				"selectedIconPath": "static/icon/index_red.png"
+			},
+			//商品列表
+			{
+				"text": "商品列表",
+				"pagePath": "pages/commodity/commodity",
+				"iconPath": "static/icon/commodity.png",
+				"selectedIconPath": "static/icon/commodity_red.png"
+			},
+			//购物车
+			{
+				"text": "购物车",
+				"pagePath": "pages/cart/cart",
+				"iconPath": "static/icon/cart.png",
+				"selectedIconPath": "static/icon/cart_red.png"
+			},
+			//用户中心
+			{
+				"text": "用户中心",
+				"pagePath": "pages/user/user",
+				"iconPath": "static/icon/user.png",
+				"selectedIconPath": "static/icon/user_red.png"
+			}
+		]
+	},
+	
+	"easycom": {
+		// "autoscan": true,
+		// "custom": {
+		// 	// uni-ui 规则如下配置
+		// 	"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		// },
+		//uview-ui组件库
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	}
+}
